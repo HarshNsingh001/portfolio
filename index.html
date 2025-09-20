@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Narayan Singh - Software Developer</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Updated Color Palette */
+        .text-darkblue {
+            color: #004080;
+        }
+
+        .bg-darkblue {
+            background-color: #004080;
+        }
+
+        .text-blue-500 {
+            color: #3B82F6;
+        }
+
+        .bg-blue-500 {
+            background-color: #3B82F6;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .bg-gray-100 {
+            background-color: #F3F4F6;
+        }
+
+        .bg-gray-200 {
+            background-color: #E5E7EB;
+        }
+        
+        /* Background image with blur for the hero section */
+        #home {
+            background-image: url('unnamed (2).jpg-0f1db378-562e-4623-932f-e120a0029559');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 64, 128, 0.7); /* Dark blue overlay */
+            backdrop-filter: blur(5px);
+            z-index: -1;
+        }
+        
+        /* Custom scrollbar for webkit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #3B82F6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-darkblue">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-darkblue">Harsh Narayan Singh</a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#about" class="text-gray-600 hover:text-darkblue font-medium transition duration-300">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-darkblue font-medium transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-darkblue font-medium transition duration-300">Projects</a>
+                <a href="#experience" class="text-gray-600 hover:text-darkblue font-medium transition duration-300">Experience</a>
+                <a href="#contact" class="text-gray-600 hover:text-darkblue font-medium transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="min-h-screen flex items-center justify-center text-center">
+        <div class="container mx-auto px-6 py-12 md:py-24 z-10 text-white">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight animate-fade-in-up">
+                Harsh Narayan Singh
+            </h1>
+            <h2 class="text-xl md:text-3xl font-medium mt-4 animate-fade-in-up delay-100">
+                Software Developer
+            </h2>
+            <p class="text-lg md:text-xl mt-6 max-w-2xl mx-auto animate-fade-in-up delay-200">
+                Crafting robust and scalable software solutions with precision and innovation
+            </p>
+            <div class="mt-8 space-x-4 animate-fade-in-up delay-300">
+                <a href="#projects" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90">View Projects</a>
+                <!-- Updated link to your resume PDF -->
+                <a href="https://drive.google.com/file/d/1QvTzT8Al8GJ4k44GqavFOf5cYsoSMUiF/view?usp=sharing" target="_blank" class="inline-block bg-darkblue text-white px-6 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90">Download Resume</a>
+                <a href="#contact" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    <style>
+/* Hero Background with subtle blur */
+#home {
+    background-image: url('/assets/images/bg.png'); /* PNG background */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+</style>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-darkblue mb-12">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="assets/images/profile.png "alt="Harsh Narayan Singh" class="rounded-2xl shadow-lg w-full h-auto">
+                </div>
+                <div>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        I am a motivated and detail-oriented Computer Science undergraduate with a strong foundation in Data Structures, Algorithms, and Backend Development. I have hands-on experience in developing web applications using powerful frameworks like Django and Flask. My passion lies in solving real-world problems through clean, efficient, and scalable code.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700 mt-4">
+                        I possess strong problem-solving and analytical skills, and I am a proficient in Data Structures & Algorithms. As a quick learner and a collaborative team player, I am always seeking opportunities to apply my skills in a challenging environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-darkblue mb-12">Skills & Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <!-- Languages -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-code text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-2 text-darkblue">Languages</h3>
+                    <p class="text-gray-600">Python, C++, C, Java (Basic), JavaScript, HTML, CSS</p>
+                </div>
+                <!-- Frameworks & Libraries -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-cubes text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-2 text-darkblue">Frameworks & Libraries</h3>
+                    <p class="text-gray-600">Django, Flask, Scikit-learn, TensorFlow, Pandas, NumPy, Matplotlib</p>
+                </div>
+                <!-- Databases -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-database text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-2 text-darkblue">Databases</h3>
+                    <p class="text-gray-600">MongoDB</p>
+                </div>
+                <!-- Tools & Platforms -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-tools text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-2 text-darkblue">Tools & Platforms</h3>
+                    <p class="text-gray-600">Git, GitHub, Postman, Docker, Jenkins, Kubernetes</p>
+                </div>
+                <!-- Concepts -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-brain text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-2 text-darkblue">Concepts</h3>
+                    <p class="text-gray-600">REST APIs, CRUD Operations, CI/CD, Unit Testing, OOPs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-darkblue mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Personal Expense Tracker -->
+                <div class="project-card bg-gray-100 p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-project-title="Personal Expense Tracker" data-project-desc="A CLI tool to track daily expenses with category-based reporting and database storage.">
+                    <h3 class="text-2xl font-semibold text-darkblue mb-2">Personal Expense Tracker</h3>
+                    <p class="project-desc text-gray-700 mb-4">A CLI tool to track daily expenses with category-based reporting and database storage.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Python</span>
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">SQLite</span>
+                    </div>
+                    <!-- Gemini API buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="summarizeProject(this)">✨ Summary</button>
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="continueProjectDescription(this)">✨ Continue</button>
+                    </div>
+                </div>
+                <!-- Project 2: YouTube Video Downloader -->
+                <div class="project-card bg-gray-100 p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-project-title="YouTube Video Downloader" data-project-desc="A GUI tool that downloads videos in various resolutions via URL input.">
+                    <h3 class="text-2xl font-semibold text-darkblue mb-2">YouTube Video Downloader</h3>
+                    <p class="project-desc text-gray-700 mb-4">A GUI tool that downloads videos in various resolutions via URL input.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Python</span>
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Pytube</span>
+                    </div>
+                    <!-- Gemini API buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="summarizeProject(this)">✨ Summary</button>
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="continueProjectDescription(this)">✨ Continue</button>
+                    </div>
+                </div>
+                <!-- Project 3: Chatbot Assistant -->
+                <div class="project-card bg-gray-100 p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-project-title="Chatbot Assistant" data-project-desc="Built a personal assistant using Natural Language Processing for automating daily tasks.">
+                    <h3 class="text-2xl font-semibold text-darkblue mb-2">Chatbot Assistant</h3>
+                    <p class="project-desc text-gray-700 mb-4">Built a personal assistant using Natural Language Processing for automating daily tasks.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Python</span>
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">NLP</span>
+                    </div>
+                    <!-- Gemini API buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="summarizeProject(this)">✨ Summary</button>
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="continueProjectDescription(this)">✨ Continue</button>
+                    </div>
+                </div>
+                <!-- Project 4: To-Do Web App -->
+                <div class="project-card bg-gray-100 p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-project-title="To-Do Web App" data-project-desc="CRUD-based task manager using Django, SQLite, and Bootstrap frontend.">
+                    <h3 class="text-2xl font-semibold text-darkblue mb-2">To-Do Web App</h3>
+                    <p class="project-desc text-gray-700 mb-4">CRUD-based task manager using Django, SQLite, and Bootstrap frontend.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Django</span>
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">SQLite</span>
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Bootstrap</span>
+                    </div>
+                    <!-- Gemini API buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="summarizeProject(this)">✨ Summary</button>
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="continueProjectDescription(this)">✨ Continue</button>
+                    </div>
+                </div>
+                <!-- Project 5: RESTful API for Notes -->
+                <div class="project-card bg-gray-100 p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-project-title="RESTful API for Notes" data-project-desc="Designed a REST API to perform CRUD operations with authentication support.">
+                    <h3 class="text-2xl font-semibold text-darkblue mb-2">RESTful API for Notes</h3>
+                    <p class="project-desc text-gray-700 mb-4">Designed a REST API to perform CRUD operations with authentication support.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Flask</span>
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Postman</span>
+                    </div>
+                    <!-- Gemini API buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="summarizeProject(this)">✨ Summary</button>
+                        <button class="flex-1 bg-darkblue text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition duration-300" onclick="continueProjectDescription(this)">✨ Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-darkblue mb-12">Experience</h2>
+            <div class="relative max-w-2xl mx-auto">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-blue-500 h-full hidden md:block"></div>
+                <!-- SDE Intern -->
+                <div class="relative mb-8 md:flex md:justify-between items-center w-full">
+                    <div class="md:w-1/2 md:pr-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-x-2">
+                            <h3 class="text-xl font-semibold text-darkblue">Software Development Engineer Intern</h3>
+                            <p class="text-blue-500 mt-1 font-medium">V4K Entertainment Pvt. Ltd. | Jun 2025 - Aug 2025</p>
+                            <ul class="list-disc list-inside mt-2 text-gray-700">
+                                <li>Contributed to the development and deployment of the "App-Based VR Experience" project.</li>
+                                <li>Integrated VR features into the app and implemented backend functionalities.</li>
+                                <li>Gained hands-on experience in software development, testing, and collaboration in a real-world project.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 border-2 border-white"></div>
+                    <div class="md:w-1/2 md:pl-8"></div>
+                </div>
+                <!-- Data Science Intern -->
+                <div class="relative mb-8 md:flex md:justify-between items-center w-full">
+                    <div class="md:w-1/2 md:pl-8 md:order-2">
+                        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:translate-x-2">
+                            <h3 class="text-xl font-semibold text-darkblue">Data Science Intern</h3>
+                            <p class="text-blue-500 mt-1 font-medium">CodSoft | Nov 2024 - Dec 2024</p>
+                            <ul class="list-disc list-inside mt-2 text-gray-700">
+                                <li>Worked on machine learning models for Titanic Survival Prediction, IMDb Rating Prediction, and Iris Classification.</li>
+                                <li>Applied preprocessing, feature engineering, and model evaluation techniques to ensure accuracy.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 border-2 border-white"></div>
+                    <div class="md:w-1/2 md:pr-8 md:order-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-darkblue mb-6">Get in Touch</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+                I'm currently seeking a software developer role. Feel free to connect with me.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <!-- NOTE: Replace the links below with your actual profile URLs -->
+                <a href="mailto:harshnarayansingh306@gmail.com" target="_blank" class="text-darkblue hover:text-blue-500 transition duration-300">
+                    <i class="fas fa-envelope text-4xl"></i>
+                    <p class="mt-2 text-sm">Email</p>
+                </a>
+                <a href="https://www.linkedin.com/in/harshnarayansingh" target="_blank" class="text-darkblue hover:text-blue-500 transition duration-300">
+                    <i class="fab fa-linkedin text-4xl"></i>
+                    <p class="mt-2 text-sm">LinkedIn</p>
+                </a>
+                <a href="https://github.com/HarshNsingh001" target="_blank" class="text-darkblue hover:text-blue-500 transition duration-300">
+                    <i class="fab fa-github text-4xl"></i>
+                    <p class="mt-2 text-sm">GitHub</p>
+                </a>
+                <a href="https://leetcode.com/u/harshnarayansingh306" target="_blank" class="text-darkblue hover:text-blue-500 transition duration-300">
+                    <i class="fas fa-code text-4xl"></i>
+                    <p class="mt-2 text-sm">LeetCode</p>
+                </a>
+                <!-- Updated CodeChef link with correct username -->
+                <a href="https://www.codechef.com/users/harshsingh19_9" target="_blank" class="text-darkblue hover:text-blue-500 transition duration-300 flex flex-col items-center">
+                    <i class="fas fa-utensils text-4xl"></i> <!-- Example Font Awesome icon for CodeChef -->
+                    <p class="mt-2 text-sm">CodeChef</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkblue text-white py-4 text-center">
+        <p>&copy; <span id="current-year"></span> Harsh Narayan Singh. All rights reserved.</p>
+    </footer>
+    
+    <!-- Modal for displaying Gemini API responses -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white p-6 rounded-lg shadow-xl max-w-lg w-full">
+            <h3 id="modal-title" class="text-2xl font-bold text-darkblue mb-4"></h3>
+            <p id="modal-content" class="text-gray-700 whitespace-pre-wrap"></p>
+            <button class="mt-6 bg-darkblue text-white px-4 py-2 rounded-full font-bold hover:bg-opacity-90 transition duration-300" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    
+    <script>
+        // API key and URL for Gemini
+        const apiKey = "AIzaSyBozVlbohhjQPRS4Afn9LqtuOdsaw84-JA"; 
+        const apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=" + apiKey;
+
+        // Function to show modal
+        function showModal(title, content) {
+            const modal = document.getElementById('modal');
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-content').textContent = content;
+            modal.classList.remove('hidden');
+        }
+
+        // Function to close modal
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+
+        // Gemini API calls
+        async function callGeminiApi(prompt) {
+            showModal("Loading...", "Please wait while Gemini generates a response...");
+            
+            let attempts = 0;
+            const maxAttempts = 5;
+            const baseDelay = 1000;
+
+            while (attempts < maxAttempts) {
+                try {
+                    const payload = {
+                        contents: [{
+                            parts: [{
+                                text: prompt
+                            }]
+                        }],
+                    };
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        if (response.status === 429) { // Too Many Requests
+                            attempts++;
+                            const delay = baseDelay * Math.pow(2, attempts - 1) + Math.random() * 100;
+                            await new Promise(res => setTimeout(res, delay));
+                            continue;
+                        }
+                        throw new Error(`API call failed with status: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    const text = result.candidates[0].content.parts[0].text;
+                    return text;
+                } catch (error) {
+                    console.error("Gemini API call failed:", error);
+                    return "Error generating response. Please try again later.";
+                }
+            }
+            return "Too many retries. Please try again later.";
+        }
+
+        async function summarizeProject(button) {
+            const card = button.closest('.project-card');
+            const projectTitle = card.dataset.projectTitle;
+            const projectDesc = card.dataset.projectDesc;
+            const prompt = `Summarize the following project in one short, impactful sentence:
+                            Title: ${projectTitle}
+                            Description: ${projectDesc}`;
+            
+            const summary = await callGeminiApi(prompt);
+            showModal("Project Summary", summary);
+        }
+
+        async function continueProjectDescription(button) {
+            const card = button.closest('.project-card');
+            const projectDesc = card.dataset.projectDesc;
+            const prompt = `Based on this description, write one more sentence to continue the project description. Do not repeat the original description.
+                            Description: ${projectDesc}`;
+
+            const continuation = await callGeminiApi(prompt);
+            showModal("Continue Project Description", continuation);
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
