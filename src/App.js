@@ -1016,5 +1016,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-hjhws
